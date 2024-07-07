@@ -87,10 +87,10 @@ let myScore = 0;
 
 function sumOfScores(score){
   for (let numbers of myScrabbleTiles) {
+  let sumtoAdd = 0;
+   sumtoAdd = numbers.score;
 
-    numbers === myScrabbleTiles.score;
-
-    console.log('will the numbers appear?', score);
+    console.log('will the numbers appear?', sumtoAdd);
 
     //numbers === myScrabbleTiles.score;
     //myScore += numbers;
