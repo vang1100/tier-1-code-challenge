@@ -38,8 +38,19 @@ console.log('testing if objects have been added', myScrabbleTiles);
 
 console.log(addTiles('K', 5));
 
+console.log('testing if objects have been added', myScrabbleTiles);
+
+
+console.log(addTiles('Z', 10));
+console.log(addTiles('X', 8));
+console.log(addTiles('D', 2));
+console.log(addTiles('A', 1));
+
+console.log('all 6 tiles should be added', myScrabbleTiles);
 
 // 4. Remove the last tile from myScrabbleTiles and save it in a variable named removedTile.
+
+
 
 
 // 5. Add the following new tile object to myScrabbleTiles.
