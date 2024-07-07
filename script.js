@@ -68,6 +68,9 @@ console.log('last tile added to this array:', removedTile);
   { tile: 'F', score : 4 }
 */
 
+console.log(addTiles('F', 4));
+
+console.log('adding F and 4 tiles', myScrabbleTiles);
 
 // 6. Complete this function. It needs to be given an array of tile objects. The function will use a loop to add up
 //    and return the sum of all the scores for a given array of scrabble tiles.
@@ -78,7 +81,18 @@ function calculateScore(tiles) {
 
 // 7. Use the function above to get the total score for myScrabbleTiles and assign the value to a variable called myScore.
 
+let myScore = 0;
 
+function sumOfScores(){
+  for (let numbers of myScrabbleTiles) {
+    numbers === myScore;
+    myScore += myScrabbleTiles.score;
+    console.log(sumOfScores);
+  }
+}
+sumOfScores();
+
+console.log('testing', myScore);
 // 8. Write code to check whether or not your score is higher than the highScore.
 //    If your score is higher, change highScore to the new high score.
 
