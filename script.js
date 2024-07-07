@@ -51,7 +51,17 @@ console.log('all 6 tiles should be added', myScrabbleTiles);
 // 4. Remove the last tile from myScrabbleTiles and save it in a variable named removedTile.
 
 
+let removedTile = [];
 
+function removeLastTile(){
+ removedTile.push(myScrabbleTiles.pop());
+  
+}
+
+removeLastTile();
+
+console.log('TESTING, DID LAST TILE GET REMOVED?', myScrabbleTiles);
+console.log('last tile added to this array:', removedTile);
 
 // 5. Add the following new tile object to myScrabbleTiles.
 /*
