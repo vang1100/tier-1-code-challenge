@@ -1,8 +1,17 @@
 // 1. Create a variable named highScore and assign it a number value of 29.
 
+console.log('hello world');
+
+let highScore = 29;
+
+console.log('the high score is:', highScore);
 
 // 2. Make a new empty array called myScrabbleTiles.
 
+
+let myScrabbleTiles = [];
+
+console.log('this is the empty array', myScrabbleTiles);
 
 // 3. Put these 6 tile objects into myScrabbleTiles.
 /*
@@ -13,6 +22,19 @@
   { tile: 'D', score: 2 }
   { tile: 'A', score: 1 }
 */
+
+function addTiles(tile, score) {
+let tileObjects = {
+  tile: tile,
+  score: score,
+}
+myScrabbleTiles.push(tileObjects);
+return myScrabbleTiles;
+}
+
+console.log(addTiles('N', 1));
+
+console.log('testing if objects have been added', myScrabbleTiles);
 
 
 // 4. Remove the last tile from myScrabbleTiles and save it in a variable named removedTile.
