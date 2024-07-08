@@ -82,7 +82,6 @@ function calculateScore(tiles) {
 // 7. Use the function above to get the total score for myScrabbleTiles and assign the value to a variable called myScore.
 
 let myScore = 0;
-let totalSum = 0;
 
 //console.log(myScrabbleTiles.length.score);
 
@@ -103,6 +102,17 @@ console.log('will total score appear??????', myScore);
 // 8. Write code to check whether or not your score is higher than the highScore.
 //    If your score is higher, change highScore to the new high score.
 
+function score(){
+  if (myScore > highScore) {
+    return highScore = myScore;
+  }
+   
+  } 
+
+
+score();
+
+console.log(highScore);
 
 // DONE!
 
