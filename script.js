@@ -54,14 +54,14 @@ console.log('all 6 tiles should be added', myScrabbleTiles);
 let removedTile = [];
 
 function removeLastTile(){
- removedTile.push(myScrabbleTiles.pop());
+ return removedTile.push(myScrabbleTiles.pop());
   
 }
 
 removeLastTile();
 
 console.log('TESTING, DID LAST TILE GET REMOVED?', myScrabbleTiles);
-console.log('last tile added to this array:', removedTile);
+console.log('last tile removed from this array:', removedTile);
 
 // 5. Add the following new tile object to myScrabbleTiles.
 /*
@@ -74,28 +74,40 @@ console.log('adding F and 4 tiles', myScrabbleTiles);
 
 // 6. Complete this function. It needs to be given an array of tile objects. The function will use a loop to add up
 //    and return the sum of all the scores for a given array of scrabble tiles.
-function calculateScore(tiles) {
 
+let sumTheScores = 0;
+
+function calculateScore(tiles) {
+for (let item of tiles){
+  sumTheScores += item.score;
+}
 }
 
 
 // 7. Use the function above to get the total score for myScrabbleTiles and assign the value to a variable called myScore.
 
-let myScore = 0;
+
+calculateScore(myScrabbleTiles);
+
+ console.log('total sum of scores', sumTheScores);
+
+let myScore = sumTheScores;
+
+console.log('sum should be 30??????', myScore);
 
 //console.log(myScrabbleTiles.length.score);
 
-function sumOfScores(){
-  for (let numbers of myScrabbleTiles) {
-    console.log('will the sum appear?', numbers.score);
-    //numbers === myScrabbleTiles.score;
-    myScore += numbers.score;
-  }
-}
+// function sumOfScores(){
+//   for (let numbers of myScrabbleTiles) {
+//     console.log('will the sum appear?', numbers.score);
+//     //numbers === myScrabbleTiles.score;
+//     myScore += numbers.score;
+//   }
+// }
 
-sumOfScores();
+// sumOfScores();
 
-console.log('will total score appear??????', myScore);
+// console.log('will total score appear??????', myScore);
 
 
 //console.log('testing', myScore);
